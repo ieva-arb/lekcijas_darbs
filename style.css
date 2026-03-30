@@ -13,3 +13,13 @@
  height: 200px;
  padding: 20px;
 }
+
+.star {
+  color: goldenrod;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-right: 2px;
+}
+
+.star::before { content:'\2606'; }
+.star.rated::before { content:'\2605'; }
