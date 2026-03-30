@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once("../includes/CONFIG.php");
+require_once("includes/CONFIG.php");
 
 
 //   HANDLE PHOTO UPLOAD

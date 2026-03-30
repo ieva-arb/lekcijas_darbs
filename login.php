@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-include '../includes/CONFIG.php';
+include 'includes/CONFIG.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 

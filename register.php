@@ -1,7 +1,7 @@
 <?php
 session_start();
-include '../includes/FUNCTIONS.php';
-include '../includes/CONFIG.php';
+include 'includes/FUNCTIONS.php';
+include 'includes/CONFIG.php';
 
 $errors = [];
 
