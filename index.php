@@ -72,15 +72,10 @@ $photos = mysqli_query($con, "
 <html>
 <head>
     <title>Photo Gallery</title>
-    <style>
-        body { font-family: Arial; }
-        .gallery { display: flex; flex-wrap: wrap; gap: 20px; }
-        .photo-box { border: 1px solid #ccc; padding: 10px; width: 220px; }
-        img { width: 200px; height: auto; display: block; }
-    </style>
+    <link rel="stylesheet" href="css/style_index.css">
+
 </head>
 <body>
-
 <h1>Photo Gallery</h1>
 
 <div>
