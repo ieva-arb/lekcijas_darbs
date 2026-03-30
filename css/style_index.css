@@ -113,6 +113,7 @@ hr {
     margin: 30px 0;
 }
 
+
 .photo-box {
     background: #ffffff;
     border-radius: 10px;
@@ -120,11 +121,37 @@ hr {
     text-align: center;
 }
 
+
 .photo-box p {
     margin-top: 10px;
     color: #5c4b3b;
 }
 
+
 .photo-box strong {
     color: #8c7357;
+}
+
+
+.file-upload {
+    font-family: Arial;
+    display: block;
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #d6c5a8;
+    border-radius: 6px;
+    background: #faf7f2;
+    cursor: pointer;
+    text-align: center;
+    color: #5c4b3b;
+}
+
+
+.file-upload input[type="file"] {
+    display: none;
+}
+
+
+.file-upload:hover {
+    background: #f0e6d8;
 }

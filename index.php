@@ -87,10 +87,10 @@ $photos = mysqli_query($con, "
 
     <form method="POST" enctype="multipart/form-data">
         <p><strong>Upload from your device:</strong></p>
-        <input type="file" name="photo">
-
-        <p><strong>Or upload from URL:</strong></p>
-        <input type="text" name="photo_url" placeholder="https://example.com/image.jpg" style="width:300px;">
+        <label class="file-upload">
+            Choose File
+            <input type="file" name="photo">
+        </label>
 
         <br><br>
         <button name="upload">Upload Photo</button>
