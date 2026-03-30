@@ -56,15 +56,10 @@ $photos = mysqli_query($con, "
 <html>
 <head>
     <title>Photo Gallery</title>
-    <style>
-        body { font-family: Arial; }
-        .gallery { display: flex; flex-wrap: wrap; gap: 20px; }
-        .photo-box { border: 1px solid #ccc; padding: 10px; width: 220px; }
-        img { width: 200px; height: auto; display: block; }
-    </style>
+    <link rel="stylesheet" href="css/style_index.css">
+
 </head>
 <body>
-
 <h1>Photo Gallery</h1>
 
 <div>
@@ -76,7 +71,12 @@ $photos = mysqli_query($con, "
 
     <form method="POST" enctype="multipart/form-data">
         <p><strong>Upload from your device:</strong></p>
-        <input type="file" name="photo">
+        <label class="file-upload">
+            Choose File
+            <input type="file" name="photo" id="photoInput">
+        </label>
+
+        <span id="fileName">No file chosen</span>
 
         <br><br>
         <button name="upload">Upload Photo</button>
@@ -99,6 +99,19 @@ $photos = mysqli_query($con, "
     </div>
 <?php endwhile; ?>
 </div>
+
+<script>
+const photoInput = document.getElementById('photoInput');
+const fileNameSpan = document.getElementById('fileName');
+
+photoInput.addEventListener('change', function() {
+    if (photoInput.files.length > 0) {
+        fileNameSpan.textContent = photoInput.files[0].name;
+    } else {
+        fileNameSpan.textContent = "No file chosen";
+    }
+});
+</script>
 
 </body>
 </html>
