@@ -4,10 +4,17 @@
 session_start();
 require_once("includes/CONFIG.php");
 
+/* checks if all necessary data is selected so it can upload correctly (only use if nothing is uploading or error)
+echo "<pre>";
+var_dump($_SESSION);
+echo "</pre>";
+*/
+
 
 //   HANDLE PHOTO UPLOAD
 
 if (isset($_POST['upload']) && isset($_SESSION['user_id'])) {
+        echo "UPLOAD STARTED";
 
     $user_id = $_SESSION['user_id'];
     $uploadedFile = null;

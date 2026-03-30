@@ -60,6 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             if ($stmt->execute()) {
                 $_SESSION["username"] = $username;
                 $_SESSION["email"] = $email;
+                $_SESSION["user_id"] = $con->insert_id;
 
                 header("Location: index.php");
                 exit();
