@@ -21,3 +21,18 @@ CREATE TABLE photos (
     FOREIGN KEY (user_id) REFERENCES users(user_id)
         ON DELETE CASCADE
 );
+
+/* !!!!!! IMPORTANT !!!!!!
+How others will use your project
+Clone repo
+
+Run:
+    setup.bat
+
+Start Apache + MySQL
+
+Open:
+    localhost un mapes + faila nosaukums
+
+cerams ka ies idk
+*/
