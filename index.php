@@ -1,4 +1,6 @@
 <?php
+
+
 session_start();
 require_once("includes/CONFIG.php");
 
@@ -54,7 +56,7 @@ if (isset($_POST['upload']) && isset($_SESSION['user_id'])) {
         mysqli_query($con, $insert);
     }
 
-    header("Location: gallery.php");
+    header("Location: index.php");
     exit();
 }
 

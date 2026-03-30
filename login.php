@@ -25,6 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Save session
             $_SESSION["username"] = $user["username"];
             $_SESSION["email"] = $user["email"];
+            $_SESSION["user_id"] = $user["user_id"];
 
             // Redirect to homepage
             header("Location: index.php");
